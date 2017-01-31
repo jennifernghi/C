@@ -15,5 +15,6 @@
 //can be left without a return value at which point it defaults to returning 0
 int main(void)
 {
-    printf("welcome to c!\n");
+    printf("welcome ");
+    printf("to C!\n");
 }//end main
