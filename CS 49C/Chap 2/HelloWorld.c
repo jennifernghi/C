@@ -8,7 +8,8 @@
 
 #include <stdio.h>
 
-int main(void)
+void main()
 {
     printf("welcome to C! \n");
+   // return 0;
 }
