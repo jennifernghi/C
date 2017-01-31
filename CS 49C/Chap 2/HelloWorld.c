@@ -6,10 +6,14 @@
 //
 //
 
+//tell compiler that read stdio.h file and include it in machine lang
 #include <stdio.h>
 
-void main()
+//main begins program execution
+//must has return type int
+//main should indicate how the program exited.
+//can be left without a return value at which point it defaults to returning 0
+int main(void)
 {
-    printf("welcome to C! \n");
-   // return 0;
-}
+    printf("welcome to c!\n");
+}//end main
