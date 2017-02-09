@@ -16,17 +16,19 @@ int main(void){
     printf("Enter number 1: ");//prompt message input num1
     scanf("%d", &num1);//read num1 from keyboard
     
-    printf("Enter number 2: ");//pr
-    scanf("%d", &num2);
+    printf("Enter number 2: ");//prompt message input num2
+    scanf("%d", &num2);//read num2 from keyboard
     
+    //add num1 and num2 and assign value to sum
     sum = num1 + num2;
     
-    if(sum%2==0){
+    
+    if(sum % 2 == 0){
         printf("sum = %d is even", sum);
     }else{
         printf("sum = %d is odd", sum);
 
     }
     
-    puts("");
+    puts("");//add new line
 }
