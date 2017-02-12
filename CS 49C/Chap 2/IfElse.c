@@ -26,4 +26,7 @@ int main(void)
     }else{
         printf("%d = %d", num1, num2);
     }
+    puts("");
+    int i=10;
+    printf("%d", i);
 }
