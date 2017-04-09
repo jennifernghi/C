@@ -1,0 +1,1523 @@
+01:56:15 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+make: Nothing to be done for `all'.
+01:56:19 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+make: Nothing to be done for `all'.
+01:56:46 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:34:17: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        printf("%d\n", sizeof(string)/sizeof(char));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %lu
+../src/lab6.c:57:25: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+        int sizeString = sizeof(string);
+                               ^
+../src/lab6.c:55:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:62:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:62:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:65:29: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("char[%d]: %c\n", j, string[j]);
+                                     ~~          ^
+                                     %zu
+5 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:00:01 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:34:17: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        printf("%d\n", sizeof(string)/sizeof(char));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %lu
+../src/lab6.c:35:13: error: use of undeclared identifier 'a'
+        printArray(a,SIZE);
+                   ^
+../src/lab6.c:58:25: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+        int sizeString = sizeof(string);
+                               ^
+../src/lab6.c:56:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:63:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:63:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:66:29: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("char[%d]: %c\n", j, string[j]);
+                                     ~~          ^
+                                     %zu
+5 warnings and 1 error generated.
+make: *** [src/lab6.o] Error 1
+02:00:21 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:34:17: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        printf("%d\n", sizeof(string)/sizeof(char));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %lu
+../src/lab6.c:35:13: warning: incompatible pointer types passing 'char [7]' to parameter of type 'int *' [-Wincompatible-pointer-types]
+        printArray(string,sizeof(string)/sizeof(char));
+                   ^~~~~~
+../src/lab6.c:16:21: note: passing argument to parameter 'array' here
+void printArray(int array[], int );
+                    ^
+../src/lab6.c:58:25: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+        int sizeString = sizeof(string);
+                               ^
+../src/lab6.c:56:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:63:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:63:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:66:29: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("char[%d]: %c\n", j, string[j]);
+                                     ~~          ^
+                                     %zu
+6 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:00:50 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:34:17: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        printf("%d\n", sizeof(string)/sizeof(char));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %lu
+../src/lab6.c:35:13: warning: incompatible pointer types passing 'char [7]' to parameter of type 'int *' [-Wincompatible-pointer-types]
+        printArray(string,sizeof(string)/sizeof(char));
+                   ^~~~~~
+../src/lab6.c:16:21: note: passing argument to parameter 'array' here
+void printArray(int array[], int );
+                    ^
+../src/lab6.c:58:25: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+        int sizeString = sizeof(string);
+                               ^
+../src/lab6.c:56:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:63:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:63:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:66:29: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("char[%d]: %c\n", j, string[j]);
+                                     ~~          ^
+                                     %zu
+6 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:02:16 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        printf("%d\n", sizeof(string)/sizeof(char));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %lu
+../src/lab6.c:36:17: warning: incompatible pointer types passing 'char [7]' to parameter of type 'int *' [-Wincompatible-pointer-types]
+        printCharArray(string,sizeof(string)/sizeof(char));
+                       ^~~~~~
+../src/lab6.c:17:25: note: passing argument to parameter 'array' here
+void printCharArray(int array[], int );
+                        ^
+../src/lab6.c:66:25: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+        int sizeString = sizeof(string);
+                               ^
+../src/lab6.c:64:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:71:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:71:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:74:29: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("char[%d]: %c\n", j, string[j]);
+                                     ~~          ^
+                                     %zu
+6 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:02:42 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        printf("%d\n", sizeof(string)/sizeof(char));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %lu
+../src/lab6.c:59:25: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+        int sizeString = sizeof(string);
+                               ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:64:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:64:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:67:29: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("char[%d]: %c\n", j, string[j]);
+                                     ~~          ^
+                                     %zu
+5 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:02:59 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        printf("%d\n", sizeof(string)/sizeof(char));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %lu
+../src/lab6.c:59:25: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+        int sizeString = sizeof(string);
+                               ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:64:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:64:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:67:29: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("char[%d]: %c\n", j, string[j]);
+                                     ~~          ^
+                                     %zu
+5 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:03:25 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        printf("%d\n", sizeof(string)/sizeof(char));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %lu
+../src/lab6.c:59:25: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+        int sizeString = sizeof(string);
+                               ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:64:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:64:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:67:29: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("char[%d]: %c\n", j, string[j]);
+                                     ~~          ^
+                                     %zu
+5 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:08:05 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        printf("%d\n", sizeof(string)/sizeof(char));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %lu
+../src/lab6.c:59:25: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+        int sizeString = sizeof(string);
+                               ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:64:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:64:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:67:29: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("char[%d]: %c\n", j, string[j]);
+                                     ~~          ^
+                                     %zu
+5 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:09:41 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        printf("%d\n", sizeof(string)/sizeof(char));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %lu
+../src/lab6.c:59:25: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+        int sizeString = sizeof(string);
+                               ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:64:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:64:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:67:29: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("char[%d]: %c\n", j, string[j]);
+                                     ~~          ^
+                                     %zu
+5 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:10:07 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        printf("%d\n", sizeof(string)/sizeof(char));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %lu
+../src/lab6.c:59:25: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+        int sizeString = sizeof(string);
+                               ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:64:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:64:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:67:29: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("char[%d]: %c\n", j, string[j]);
+                                     ~~          ^
+                                     %zu
+5 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:12:59 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        printf("%d\n", sizeof(string)/sizeof(char));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %lu
+../src/lab6.c:60:31: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+                for(size_t j =0; j < (sizeof(string)/sizeof(char)) && string[j] != '\0'; j++){
+                                            ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:62:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:62:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+4 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:15:21 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:60:31: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+                for(size_t j =0; j < (sizeof(string)/sizeof(char)) && string[j] != '\0'; j++){
+                                            ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:62:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:62:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+3 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:17:10 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+        printf("%s\n", getStringSizeWithSpace(string));
+                ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                %d
+../src/lab6.c:60:31: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+                for(size_t j =0; j < (sizeof(string)/sizeof(char)) && string[j] != '\0'; j++){
+                                            ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:62:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:62:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:75:6: error: conflicting types for 'getStringSizeWithSpace'
+void getStringSizeWithSpace(char* s){
+     ^
+../src/lab6.c:20:5: note: previous declaration is here
+int getStringSizeWithSpace(char *sPtr);
+    ^
+../src/lab6.c:78:8: warning: empty character constant [-Winvalid-pp-token]
+                *s = '';
+                     ^
+../src/lab6.c:78:8: error: expected expression
+5 warnings and 2 errors generated.
+make: *** [src/lab6.o] Error 1
+02:17:22 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: error: argument type 'void' is incomplete
+        printf("%s\n", getStringSizeWithSpace(string));
+                       ^
+../src/lab6.c:60:31: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+                for(size_t j =0; j < (sizeof(string)/sizeof(char)) && string[j] != '\0'; j++){
+                                            ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:62:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:62:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:78:8: warning: empty character constant [-Winvalid-pp-token]
+                *s = '';
+                     ^
+../src/lab6.c:78:8: error: expected expression
+4 warnings and 2 errors generated.
+make: *** [src/lab6.o] Error 1
+02:17:51 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: error: argument type 'void' is incomplete
+        printf("%s\n", getStringSizeWithSpace(string));
+                       ^
+../src/lab6.c:60:31: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+                for(size_t j =0; j < (sizeof(string)/sizeof(char)) && string[j] != '\0'; j++){
+                                            ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:62:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:62:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:78:8: error: expected expression
+                *s === '';
+                     ^
+../src/lab6.c:78:10: warning: empty character constant [-Winvalid-pp-token]
+                *s === '';
+                       ^
+../src/lab6.c:78:10: error: expected expression
+4 warnings and 3 errors generated.
+make: *** [src/lab6.o] Error 1
+02:17:58 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: error: argument type 'void' is incomplete
+        printf("%s\n", getStringSizeWithSpace(string));
+                       ^
+../src/lab6.c:60:31: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+                for(size_t j =0; j < (sizeof(string)/sizeof(char)) && string[j] != '\0'; j++){
+                                            ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:62:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:62:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:78:9: warning: empty character constant [-Winvalid-pp-token]
+                *s == '';
+                      ^
+../src/lab6.c:78:9: error: expected expression
+4 warnings and 2 errors generated.
+make: *** [src/lab6.o] Error 1
+02:19:19 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:35:17: error: argument type 'void' is incomplete
+        printf("%s\n", getStringSizeWithSpace(string));
+                       ^
+../src/lab6.c:60:31: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+                for(size_t j =0; j < (sizeof(string)/sizeof(char)) && string[j] != '\0'; j++){
+                                            ^
+../src/lab6.c:57:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:62:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:62:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:79:9: warning: empty character constant [-Winvalid-pp-token]
+                        *s = '';
+                             ^
+../src/lab6.c:79:9: error: expected expression
+4 warnings and 2 errors generated.
+make: *** [src/lab6.o] Error 1
+02:25:31 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:36:17: error: argument type 'void' is incomplete
+        printf("%s\n", getStringSizeWithSpace(string));
+                       ^
+../src/lab6.c:61:31: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+                for(size_t j =0; j < (sizeof(string)/sizeof(char)) && string[j] != '\0'; j++){
+                                            ^
+../src/lab6.c:58:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:63:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:63:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+../src/lab6.c:80:9: warning: empty character constant [-Winvalid-pp-token]
+                        *s = '';
+                             ^
+../src/lab6.c:80:9: error: expected expression
+4 warnings and 2 errors generated.
+make: *** [src/lab6.o] Error 1
+02:25:57 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:36:17: error: argument type 'void' is incomplete
+        printf("%s\n", getStringSizeWithSpace(string));
+                       ^
+../src/lab6.c:61:31: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+                for(size_t j =0; j < (sizeof(string)/sizeof(char)) && string[j] != '\0'; j++){
+                                            ^
+../src/lab6.c:58:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:63:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:63:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+3 warnings and 1 error generated.
+make: *** [src/lab6.o] Error 1
+02:26:16 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:36:17: error: argument type 'void' is incomplete
+        printf("%s\n", getStringSizeWithSpace(string));
+                       ^
+../src/lab6.c:61:31: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+                for(size_t j =0; j < (sizeof(string)/sizeof(char)) && string[j] != '\0'; j++){
+                                            ^
+../src/lab6.c:58:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:63:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:63:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+3 warnings and 1 error generated.
+make: *** [src/lab6.o] Error 1
+02:28:00 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:61:31: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+                for(size_t j =0; j < (sizeof(string)/sizeof(char)) && string[j] != '\0'; j++){
+                                            ^
+../src/lab6.c:58:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:63:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:63:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+3 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:28:21 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:61:31: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+                for(size_t j =0; j < (sizeof(string)/sizeof(char)) && string[j] != '\0'; j++){
+                                            ^
+../src/lab6.c:58:22: note: declared here
+void countVowel(char string[], int array[]){
+                     ^
+../src/lab6.c:63:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:63:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+3 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:29:11 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:36:25: warning: data argument not used by format string [-Wformat-extra-args]
+        printf("%s\n", string, sizeof(string));
+               ~~~~~~          ^
+../src/lab6.c:58:6: error: conflicting types for 'countVowel'
+void countVowel(char string[], int array[], int stringSize){
+     ^
+../src/lab6.c:19:6: note: previous declaration is here
+void countVowel(char string[], int array[]);
+     ^
+../src/lab6.c:63:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:63:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+3 warnings and 1 error generated.
+make: *** [src/lab6.o] Error 1
+02:29:21 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:36:25: warning: data argument not used by format string [-Wformat-extra-args]
+        printf("%s\n", string, sizeof(string));
+               ~~~~~~          ^
+../src/lab6.c:38:22: error: too few arguments to function call, expected 3, have 2
+        countVowel(string, a);
+        ~~~~~~~~~~          ^
+../src/lab6.c:19:1: note: 'countVowel' declared here
+void countVowel(char string[], int array[], int);
+^
+../src/lab6.c:63:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:63:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+3 warnings and 1 error generated.
+make: *** [src/lab6.o] Error 1
+02:29:44 **** Incremental Build of configuration Release for project c_simple ****
+make all 
+Building file: ../src/arrayPointer.c
+Invoking: Cross GCC Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/arrayPointer.d" -MT"src/arrayPointer.o" -o "src/arrayPointer.o" "../src/arrayPointer.c"
+../src/arrayPointer.c:9:2: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+        printf("entered %d, function 1 called\n", a);
+        ^
+../src/arrayPointer.c:9:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning generated.
+Finished building: ../src/arrayPointer.c
+ 
+Building file: ../src/c_simple.c
+Invoking: Cross GCC Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/c_simple.d" -MT"src/c_simple.o" -o "src/c_simple.o" "../src/c_simple.c"
+../src/c_simple.c:52:15: warning: format specifies type 'unsigned int *' but the argument has type 'size_t *' (aka 'unsigned long *') [-Wformat]
+                scanf("%u", &choice);
+                       ~~   ^~~~~~~
+                       %zu
+../src/c_simple.c:54:15: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+                while(choice>=0 && choice<3){
+                      ~~~~~~^ ~
+../src/c_simple.c:58:16: warning: format specifies type 'unsigned int *' but the argument has type 'size_t *' (aka 'unsigned long *') [-Wformat]
+                        scanf("%u", &choice);
+                               ~~   ^~~~~~~
+                               %zu
+3 warnings generated.
+Finished building: ../src/c_simple.c
+ 
+Building file: ../src/convertToUpper.c
+Invoking: Cross GCC Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/convertToUpper.d" -MT"src/convertToUpper.o" -o "src/convertToUpper.o" "../src/convertToUpper.c"
+../src/convertToUpper.c:9:11: warning: implicit declaration of function 'toupper' is invalid in C99 [-Wimplicit-function-declaration]
+                *sPtr = toupper(*sPtr);
+                        ^
+1 warning generated.
+Finished building: ../src/convertToUpper.c
+ 
+Building target: c_simple
+Invoking: Cross GCC Linker
+gcc  -o "c_simple"  ./src/arrayPointer.o ./src/c_simple.o ./src/convertToUpper.o   
+Finished building target: c_simple
+ 
+02:29:45 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:36:25: warning: data argument not used by format string [-Wformat-extra-args]
+        printf("%s\n", string, sizeof(string));
+               ~~~~~~          ^
+../src/lab6.c:38:22: error: too few arguments to function call, expected 3, have 2
+        countVowel(string, a);
+        ~~~~~~~~~~          ^
+../src/lab6.c:19:1: note: 'countVowel' declared here
+void countVowel(char string[], int array[], int);
+^
+../src/lab6.c:63:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:63:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+3 warnings and 1 error generated.
+make: *** [src/lab6.o] Error 1
+02:29:51 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:63:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:63:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+2 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:30:24 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:62:47: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                             ~~                           ^
+                                             %zu
+../src/lab6.c:62:61: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                                printf("char[%d]: %c    vowel[%d]: %c\n", j, string[j], vowel, vowels[vowel]);
+                                                              ~~                        ^~~~~
+                                                              %zu
+2 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:31:11 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+02:33:07 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:38:31: error: argument type 'void' is incomplete
+        printf("total vowels: %d\n", countVowel(string, a, sizeof(string)));
+                                     ^
+../src/lab6.c:59:5: error: conflicting types for 'countVowel'
+int countVowel(char string[], int array[], int stringSize){
+    ^
+../src/lab6.c:19:6: note: previous declaration is here
+void countVowel(char string[], int array[], int);
+     ^
+2 errors generated.
+make: *** [src/lab6.o] Error 1
+02:33:20 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+11:45:37 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:59:28: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+        size_t stringSize = sizeof(string);
+                                  ^
+../src/lab6.c:57:21: note: declared here
+int countVowel(char string[], int array[]){
+                    ^
+1 warning generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+11:47:03 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+13:06:39 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+14:22:15 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:40:5: error: called object type 'int' is not a function or function pointer
+        max(a, SIZE, &max, &index);
+        ~~~^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+14:23:33 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:40:5: error: called object type 'int' is not a function or function pointer
+        max(a, SIZE, max, index);
+        ~~~^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+14:24:18 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:40:5: error: called object type 'int' is not a function or function pointer
+        max(a, SIZE, max, index);
+        ~~~^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+14:26:04 **** Incremental Build of configuration Release for project c_simple ****
+make all 
+make: Nothing to be done for `all'.
+14:26:04 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:41:5: error: called object type 'int' is not a function or function pointer
+        max(a, SIZE, &max, &index);
+        ~~~^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+14:26:07 **** Incremental Build of configuration Release for project c_simple ****
+make all 
+make: Nothing to be done for `all'.
+14:26:07 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:41:5: error: called object type 'int' is not a function or function pointer
+        max(a, SIZE, &max, &index);
+        ~~~^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+14:26:16 **** Incremental Build of configuration Release for project c_simple ****
+make all 
+make: Nothing to be done for `all'.
+14:26:16 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:41:5: error: called object type 'int' is not a function or function pointer
+        max(a, SIZE, &max, &index);
+        ~~~^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+14:28:04 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:41:5: error: called object type 'int' is not a function or function pointer
+        max(a, SIZE, max, index);
+        ~~~^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+14:44:56 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:19:42: error: redefinition of parameter 'p'
+void max(int array[], int, int *p , int *p );
+                                         ^
+../src/lab6.c:19:33: note: previous declaration is here
+void max(int array[], int, int *p , int *p );
+                                ^
+../src/lab6.c:41:5: error: called object type 'int' is not a function or function pointer
+        max(a, SIZE, max, index);
+        ~~~^
+2 errors generated.
+make: *** [src/lab6.o] Error 1
+14:45:23 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:41:5: error: called object type 'int' is not a function or function pointer
+        max(a, SIZE, max, index);
+        ~~~^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+14:45:47 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:41:5: error: called object type 'int' is not a function or function pointer
+        max(a, SIZE, max, index);
+        ~~~^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+14:46:39 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:41:5: error: called object type 'int' is not a function or function pointer
+        max(a, SIZE);
+        ~~~^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+14:48:58 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:43:5: error: called object type 'int' is not a function or function pointer
+        max(array, SIZE);
+        ~~~^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+14:50:09 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:43:5: error: called object type 'int' is not a function or function pointer
+        max(array, SIZE);
+        ~~~^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+14:51:11 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:47:23: warning: format specifies type 'int' but the argument has type 'void (*)(int *, int)' [-Wformat]
+        printf("max = %d\n", max);
+                      ~~     ^~~
+../src/lab6.c:40:6: warning: unused variable 'maxValue' [-Wunused-variable]
+        int maxValue=0;
+            ^
+2 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+14:53:13 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+14:53:47 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+14:56:08 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+14:56:20 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+14:56:45 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+14:58:09 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:92:31: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("array[%d] = %d\n", i,  array[i]);
+                                      ~~           ^
+                                      %zu
+1 warning generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+14:58:47 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:88:30: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                printf("array[%d] = %d\n", i,  array[i]);
+                              ~~           ^
+                              %zu
+../src/lab6.c:92:31: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("array[%d] = %d\n", i,  array[i]);
+                                      ~~           ^
+                                      %zu
+2 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+14:59:07 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:37:6: warning: unused variable 'array' [-Wunused-variable]
+        int array[5]={0};
+            ^
+../src/lab6.c:88:30: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                printf("array[%d] = %d\n", i,  array[i]);
+                              ~~           ^
+                              %zu
+../src/lab6.c:92:31: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+                        printf("array[%d] = %d\n", i,  array[i]);
+                                      ~~           ^
+                                      %zu
+3 warnings generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+14:59:34 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:37:6: warning: unused variable 'array' [-Wunused-variable]
+        int array[5]={0};
+            ^
+1 warning generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:11:52 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:12:22 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:13:23 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:17:34 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:27:23 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:70:6: warning: comparison of array 'vowels' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(vowels!=0){
+                   ^~~~~~  ~
+1 warning generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:27:34 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:70:6: warning: comparison of array 'vowels' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(vowels!=0){
+                   ^~~~~~  ~
+1 warning generated.
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:28:02 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:31:42 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:33:55 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+../src/lab6.c:58:6: error: conflicting types for 'countVowel'
+void countVowel(char const string[], int array[], size_t const stringSize){
+     ^
+../src/lab6.c:17:6: note: previous declaration is here
+void countVowel(char string[], int array[], size_t);
+     ^
+1 error generated.
+make: *** [src/lab6.o] Error 1
+15:34:48 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:35:19 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:36:05 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:38:51 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:53:59 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:55:40 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:58:00 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+15:58:13 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+16:00:08 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+16:05:06 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 

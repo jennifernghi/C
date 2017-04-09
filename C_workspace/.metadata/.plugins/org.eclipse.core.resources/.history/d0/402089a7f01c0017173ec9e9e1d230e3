@@ -1,0 +1,12 @@
+/*
+ * arraypointer.c
+ *
+ *  Created on: Apr 8, 2017
+ *      Author: jennifernghinguyen
+ */
+#include <stdio.h>
+
+int main(void){
+	puts("hi");
+}
+

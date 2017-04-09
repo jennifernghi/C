@@ -1,0 +1,19 @@
+/*
+ ============================================================================
+ Name        : c_simple.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int a =7;
+	int *apt = &a;
+
+	printf("address of a %p \n value of apt %p", &a, apt);
+}

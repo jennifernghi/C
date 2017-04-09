@@ -1,0 +1,15 @@
+/*
+ * arrayPointer.h
+ *
+ *  Created on: Apr 8, 2017
+ *      Author: jennifernghinguyen
+ */
+
+#ifndef ARRAYPOINTER_H_
+#define ARRAYPOINTER_H_
+void function1(int);
+void function2(int);
+void function3(int);
+void test(void);
+
+#endif /* ARRAYPOINTER_H_ */

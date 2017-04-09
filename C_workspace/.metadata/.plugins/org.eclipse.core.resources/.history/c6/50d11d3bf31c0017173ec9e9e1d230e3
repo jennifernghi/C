@@ -1,0 +1,32 @@
+/*
+ * arrayPointer.c
+ *
+ *  Created on: Apr 8, 2017
+ *      Author: jennifernghinguyen
+ */
+
+void function1(int a){
+	printf("entered %d, function 1 called\n", a);
+}
+void function2(int b){
+	printf("entered %d, function 2 called\n", b);
+}
+void function3(int c){
+	printf("entered %d, function 3 called\n", c);
+}
+
+void test(){
+	void (*f[3])(int) = {function1, function2, function3};
+			size_t choice = 0
+			printf("%s", "enter 0-2. 3 to exit");
+
+			scanf("%u", &choice);
+
+			while(choice>0 && choice<3){
+
+				(*f[choice])(choice);
+				printf("%s", "enter 0-2. 3 to exit");
+				scanf("%u", &choice);
+			}
+}
+

@@ -1,0 +1,66 @@
+/*
+ ============================================================================
+ Name        : lab6.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+#define SIZE 5
+
+void max(int const array[], int, int*, int*);
+int countVowel(char const vowels[], char const string[], int array[], size_t);
+int main(void) {
+
+	char vowels[SIZE] = {'a', 'o', 'u', 'i', 'e'};
+	char string[] = "Good morning, students!";
+	printf("%s\n", string);
+	int vowelOccurence[SIZE]={0};
+	printf("Total vowels: %d\n", countVowel(vowels, string, vowelOccurence, sizeof(string)));
+	for(size_t i=0; i<SIZE; i++){
+		if(vowelOccurence[i]!=0){
+			printf("%c appears %d times\n", vowels[i], vowelOccurence[i]);
+		}
+	}
+
+
+	int maxValue, maxIndex;
+
+	//find most-frequent vowel
+	max(vowelOccurence, SIZE, &maxValue, &maxIndex);
+
+	printf("the most-frequent vowel: %c (%d times)\n", vowels[maxIndex], maxValue);
+
+
+}
+
+int countVowel(char const vowels[], char const string[], int array[], size_t const stringSize){
+	int count =0;
+	for(size_t vowel=0; vowel<SIZE; vowel++){
+		for(size_t j =0; j < stringSize; j++){
+			if(string[j]==vowels[vowel]){
+				array[vowel] += 1;
+				++count;
+			}
+		}
+	}
+
+	return count;
+}
+
+void max(int const array[], int const size, int * const valuePtr, int * const indexPtr ){
+	*valuePtr = array[0];
+	*indexPtr = 0;
+	for(size_t i =0; i<size; i++){
+		if(array[i]>*valuePtr){
+			*valuePtr=array[i];
+			*indexPtr=i;
+		}
+	}
+
+}
+

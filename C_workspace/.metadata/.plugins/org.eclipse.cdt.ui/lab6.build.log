@@ -1,0 +1,15 @@
+16:05:06 **** Incremental Build of configuration Release for project lab6 ****
+make all 
+Building file: ../src/lab6.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/lab6.d" -MT"src/lab6.o" -o "src/lab6.o" "../src/lab6.c"
+Finished building: ../src/lab6.c
+ 
+Building target: lab6
+Invoking: MacOS X C Linker
+gcc  -o "lab6"  ./src/lab6.o   
+Finished building target: lab6
+ 
+
+16:05:08 Build Finished (took 1s.774ms)
+

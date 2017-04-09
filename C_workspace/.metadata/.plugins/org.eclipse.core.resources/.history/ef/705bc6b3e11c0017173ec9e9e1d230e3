@@ -1,0 +1,17 @@
+/*
+ * convertToUppercase.c
+ *
+ *  Created on: Apr 8, 2017
+ *      Author: jennifernghinguyen
+ */
+#include <stdio.h>
+#include <ctype.h>
+void convertToUpper(char *);
+
+void convertToUpper(char *sPtr){
+	while(*sPtr != '\0'){
+		*sPtr = toupper(*sPtr);
+		++sPtr;
+	}
+}
+

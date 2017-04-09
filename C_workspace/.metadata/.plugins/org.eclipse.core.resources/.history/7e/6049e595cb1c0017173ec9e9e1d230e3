@@ -1,0 +1,47 @@
+/*
+ ============================================================================
+ Name        : c_simple.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+int cubeByValue(int num);
+void cubeByReference(int *npt);
+int main(void) {
+	int a =7;
+	int *apt = &a;
+
+	printf("address of a %p\nvalue of apt %p", &a, apt);
+	printf("\nvalue of a %d\nvalue of *apt %d", a, *apt);
+	printf("\nshowing that & and * are complement of the other\n"
+			"&*apt = %p\n"
+			"*&apt = %p\n", &*apt, *&apt);
+
+	/////////pass by value///////
+
+	int b =5;
+	printf("%s: %d\n","origin b = ", b);
+
+	b=cubeByValue(b);
+	puts("%s: %d","cube by value b = ", b);
+	//pass by referrence///////
+	int c =5;
+	puts("%s: %d","origin c = ", c);
+
+	cubeByReference(&b);
+	puts("%s: %d","cube by value c = ", c);
+
+}
+
+int cubeByValue(int num){
+	return num*num*num;
+}
+
+void cubeByReference(int *npt){
+	*npt = *npt * *npt * *npt;
+}
